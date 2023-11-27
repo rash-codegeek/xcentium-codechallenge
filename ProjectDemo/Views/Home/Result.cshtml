@@ -1,0 +1,46 @@
+﻿@model ResultViewModel
+
+@if (Model != null)
+{
+
+    <h3>Word & Image Details </h3>
+    <h4>Total Words Count: @Model.WordCountDetails.TotalWordsCount</h4>
+
+    <h4>Top 10 Occurring Words</h4>
+    if (Model.WordCountDetails.TopWords == null)
+    {
+        <h2>No words to display</h2>
+    }
+    <ul>
+        @foreach (var word in Model.WordCountDetails.TopWords)
+        {
+            <li>@word.Key: @word.Value</li>
+        }
+    </ul>
+    <h4>Image Gallery</h4>
+    if (Model.ImageUrls == null)
+    {
+        <h2>No images to display</h2>
+    }
+    <div class="gallery">
+        @foreach (var imageUrl in Model.ImageUrls)
+        {
+            <img data-src="@imageUrl.TargetUrl" alt="Image" class="lazy-load" />
+        }
+    </div>
+}
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .gallery img {
+            max-width: 200px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+</style>
