@@ -6,18 +6,18 @@ To build a small user-friendly website that allows the user to type a URL into a
 1. List all images from the target URL and show them to the user in a carousel or gallery control.
 2. Count all the words (display the total) and display the top 10 occurring words and their count.
 
-# Functionalities Used
-1. ASP.NET MVC Framework 6.0
-2. Dependency Injection
-3. HTML Agility Pack to retrieve HTML content from a given web page asynchronously
-4. Implemented INMEMORY caching for faster access to data
-5. Implemented LAZY LOADING of the images on the partial view using INTERSECTION OBSERVER
-6. Performed validations and the exceptions were handled
-7. Added test cases using Moq
+# Functionalities Implemented
+1. Dependency Injection
+2. HTML Agility Pack to retrieve HTML content from a given web page asynchronously
+3. Implemented INMEMORY caching for faster access to data
+4. Implemented LAZY LOADING of the images on the partial view using INTERSECTION OBSERVER
+5. Performed validations and the exceptions were handled
+6. Added test cases using the Moq
 
 # Tools & Frameworks
-1. ASP .NET MVC Framework 6.0
-2. Microsoft Visual Studio Community 2022 Version 17.7.5
+1. Microsoft Visual Studio Community 2022 Version 17.7.5
+2. ASP .NET MVC Framework 6.0
+3. Moq 4.20.69
 
 # Dependencies
 The solution requires the below dependencies to be installed for the successful compilation 
